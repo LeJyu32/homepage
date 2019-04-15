@@ -5,6 +5,84 @@
     <!-- Farvicon -->
     <link rel=" shortcut icon" href="https://raw.githubusercontent.com/LeJyu32/homepage/master/img/favicon.ico">
     <link rel="icon" href="https://raw.githubusercontent.com/LeJyu32/homepage/master/img/favicon.ico">
+    <!-- 햄버거 메뉴 Style -->
+    <style type="text/css">
+      .dg-hd-mo-menu-panel {
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        height: 100%;
+        width: 80%;
+        background-color: #fff;
+      }
+      /*햄버거 메뉴*/
+      .dg-hd-mo-menu-panel .dg-hd-mo-menu-btn {
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        display: inline-block;
+        float: left;
+        cursor: pointer;
+        padding: 25px 31px;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        width: 30px;
+        height: 20.18181818px;
+      }
+      .dg-hd-mo-menu-panel .dg-hd-mo-menu-btn span,
+      .dg-hd-mo-menu-panel .dg-hd-mo-menu-btn span:before,
+      .dg-hd-mo-menu-panel .dg-hd-mo-menu-btn span:after {
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        width: 32px;
+        height: 3px;
+        background-color: #979797;
+      }
+      .dg-hd-mo-menu-panel .dg-hd-mo-menu-btn span {
+        position: relative;
+        display: inline-block;
+        float: left;
+        margin-top: 9.09090909px;
+      }
+      .dg-hd-mo-menu-panel .dg-hd-mo-menu-btn span:before,
+      .dg-hd-mo-menu-panel .dg-hd-mo-menu-btn span:after {
+        content: "";
+        position: absolute;
+        left: 0;
+      }
+      .dg-hd-mo-menu-panel .dg-hd-mo-menu-btn span:before {
+        top: -9.09090909px;
+      }
+      .dg-hd-mo-menu-panel .dg-hd-mo-menu-btn span:after {
+        top: 9.09090909px;
+      }
+      /*햄버거 메뉴 활성화 시*/
+      .dg-hd-mo-menu-panel .dg-hd-mo-menu-btn.mo-menu-active span{
+        background: transparent;
+      }
+      .dg-hd-mo-menu-panel .dg-hd-mo-menu-btn.mo-menu-active span:before,
+      .dg-hd-mo-menu-panel .dg-hd-mo-menu-btn.mo-menu-active span:after {
+        top: 0;
+      }
+      .dg-hd-mo-menu-panel .dg-hd-mo-menu-btn.mo-menu-active span:before {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+      }
+    </style>
   </head>
   <body>
     <!-- 로고 -->
